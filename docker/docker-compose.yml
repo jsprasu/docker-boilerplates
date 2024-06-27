@@ -15,7 +15,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - '.:/var/www/html'
+      - '../:/var/www/html'
       - './nginx-conf:/etc/nginx/conf.d'
     links:
       - php
@@ -32,7 +32,7 @@ services:
       context: .
       dockerfile: containers/Dockerfile_php
     volumes:
-      - '.:/var/www/html'
+      - '../:/var/www/html'
       # - './php-logging.conf:/usr/local/etc/php-fpm.d/zz-log.conf'
     networks:
       - backend

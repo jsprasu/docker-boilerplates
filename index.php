@@ -7,9 +7,8 @@ try {
     // TODO: Change the connection values here
     $mysqli = new mysqli('sample-project-mysql', 'sample_user', 'sample_user_123', 'sample_app');
 
-    if ($mysqli -> connect_errno) {
-        echo 'Failed to connect to MySQL: ' . $mysqli -> connect_error;
-        exit();
+    if ($mysqli->connect_errno) {
+        echo 'Failed to connect to MySQL: ' . $mysqli->connect_error;
     } else {
         echo 'Connected to MySQL.';
     }

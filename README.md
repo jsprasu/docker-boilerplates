@@ -6,12 +6,16 @@ This project includes boilerplates for PHP, Nginx and MySQL docker containers.
 
 Before building the containers, please change below.
 
-1. Change all the usage of 'sample-project' in docker-compose.yml file.
-2. Change the app username, password and database name in initdb/create-user.sql file.
-3. Change the domain 'sample-project.local' in nginx-conf/nginx.conf file.
+1. Change all the usage of 'sample-project' in docker/docker-compose.yml file.
+2. Change the app username, password and database name in docker/initdb/create-user.sql file.
+3. Change the domain 'sample-project.local' in docker/nginx-conf/nginx.conf file.
 4. Change the MySQL connect config values in index.php file.
 
 Make sure you are in the correct path in the bash.
+
+```bash
+cd <project-directory>/docker
+```
 
 Build and start the containers.
 
